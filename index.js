@@ -13,7 +13,7 @@ class Formatter {
     let result = [];
     let arrayOfWords = sentence.split( " " )
     for ( let n = 0; n < arrayOfWords.length; n++ ) {
-      if ( n == 0 ) {
+      if ( n === 0 ) {
         result.push( this.capitalize( arrayOfWords[ n ] ) )
       } else {
         if ( exceptions.includes( arrayOfWords[ n ] ) ) {
